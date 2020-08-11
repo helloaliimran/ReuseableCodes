@@ -23,4 +23,8 @@ public FileResult ExportCSV(long Id)
         }
 ```
 #### limitation
-- no merge row and styling like excel.
+  - how to merge two cell in csv file.
+  
+  This is not possible
+  - A comma-separated values (CSV) file stores tabular data (numbers and text) in plain text.
+  - It is just data, with no attached formatting or knowledge of how the cells should be merged when the data is imported.
