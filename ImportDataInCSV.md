@@ -22,3 +22,5 @@ public FileResult ExportCSV(long Id)
             return File(new UTF8Encoding().GetBytes(sw.ToString()), "text/csv", "export.csv");
         }
 ```
+#### limitation
+- no merge row and styling like excel.
