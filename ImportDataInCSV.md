@@ -1,4 +1,4 @@
-# Export to excel
+# Export to CSV
 
 > CSV file mean comma seperated values. but you can also use other seprater as well. [, "" ; :]
 
