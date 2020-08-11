@@ -1,10 +1,13 @@
-#Export to excel
-// CSV file mean comma seperated values. but you also seprater as well. [, "" ; :]
+# Export to excel
 
+> CSV file mean comma seperated values. but you can also use other seprater as well. [, "" ; :]
+
+```
 public FileResult ExportCSV(long Id)
         {
             var model = new SomeModel();
-            model.Init(Id); //initialize model
+            model.Init(Id); 
+            //initialize model
             StringWriter sw = new StringWriter();
             //column headers.
             sw.WriteLine("Id,Name,Value,Date");
@@ -18,3 +21,4 @@ public FileResult ExportCSV(long Id)
             //download file in the broswser.
             return File(new UTF8Encoding().GetBytes(sw.ToString()), "text/csv", "export.csv");
         }
+```
